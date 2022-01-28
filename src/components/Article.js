@@ -15,8 +15,7 @@ const MinutesToRead = ({minutes}) => {
     )
 }
 
-const Article = ({article}) => {
-    const {title, date, preview, minutes} = article
+const Article = ({title, date, preview, minutes}) => {
     let DEFAULT_DATE = "January 1, 1970";
     return (
         <article className="article-blog">

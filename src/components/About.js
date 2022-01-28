@@ -1,5 +1,4 @@
-const About = ({data}) => {
-    const {image,about} = data;
+const About = ({image,about}) => {
     const image_url = image ? image:"https://via.placeholder.com/215"
 
     return (

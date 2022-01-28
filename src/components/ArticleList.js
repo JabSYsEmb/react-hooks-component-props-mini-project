@@ -1,10 +1,14 @@
 import Article from "./Article";
 
-const ArticleList = ({data}) => {
-    const {posts} = data;
+const ArticleList = ({posts}) => {
+    console.log("posts",posts)
     return (
         <main className="main-articlelist">
-            {posts.map(article => <Article key={article.id} article={article}/>)}
+            {posts.map(({id,title,date,preview,minutes}) => <Article key={id} 
+                                                                   title={title} 
+                                                                   date={date} 
+                                                                   preview={preview} 
+                                                                   minutes={minutes}/>)}
         </main>
     )
 }
